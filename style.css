@@ -1,3 +1,18 @@
 h1 {
     background-color: yellow;
 }
+
+/*
+Day 5
+*/
+h1 {
+    color: rgb(67, 6, 67);
+    background-color: yellow;
+    margin: 20px;
+    padding: 10px;
+}
+p{
+    background-color: bisque;
+    margin: 20px;
+    padding: 20px;
+}
