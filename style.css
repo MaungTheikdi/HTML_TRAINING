@@ -1,9 +1,28 @@
+
+/*
+Day 4
 h1 {
     background-color: yellow;
 }
-
+*/
 /*
 Day 5
+
+h1 {
+    color: rgb(67, 6, 67);
+    background-color: yellow;
+    margin: 20px;
+    padding: 10px;
+}
+p{
+    background-color: bisque;
+    margin: 20px;
+    padding: 20px;
+}
+*/
+
+/*
+day 6 and 7
 */
 h1 {
     color: rgb(67, 6, 67);
@@ -15,4 +34,30 @@ p{
     background-color: bisque;
     margin: 20px;
     padding: 20px;
+}
+/*
+Day 6 + 7
+*/
+#a{
+    color: red;
+}
+.a{
+    color: rgb(217, 255, 0);
+    background-color: aqua;
+    padding-top: 20px;
+}
+
+.b {
+    background-color: rgb(123, 185, 243);
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.c{
+    color: blueviolet;
+}
+
+.d{
+    color: rgb(0, 4, 255);
+    background-color: aqua;
 }
