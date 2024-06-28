@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <!-- https://fontawesome.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* Style the navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgb(10, 43, 151);
+            z-index: 100; /* Ensure it's above other content */
+        }
+        /* Navbar links */
+        nav a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        li a:hover {
+            background-color: rgba(2, 9, 32, 0.8);
+            color: yellow;
+        }
+        
+        .content {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+        }
+        
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav li {
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Exercise</h1>
+            <p>This is a Exercise One</p>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="day_13_WebDesign_About.html"><i class="fas fa-book"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <div class="content">
+            <h2>Welcome to Exercise One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi orci. Nulla facilisi. Donec vel turpis et justo tincidunt elementum. Duis vel lectus a neque fermentum tristique. Donec consectetur, felis vel consectetur pharetra, ligula ex gravida neque, vel posuere felis enim in velit. Sed vel urna a neque sagittis convallis vel ut velit. Donec vel tortor sed justo pellentesque pellentesque. Donec nec ipsum non orci fermentum consectetur. Donec gravida, lectus vel vestibulum congue, nunc turpis consectetur dolor, ut sagittis arcu dolor id enim. Nulla facilisi.</p>
+
+            <img src="img/picture_example.jpg" alt="">
+
+            <h2>Welcome to Exercise One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi orci. Nulla facilisi. Donec vel turpis et justo tincidunt elementum. Duis vel lectus a neque fermentum tristique. Donec consectetur, felis vel consectetur pharetra, ligula ex gravida neque, vel posuere felis enim in velit. Sed vel urna a neque sagittis convallis vel ut velit. Donec vel tortor sed justo pellentesque pellentesque. Donec nec ipsum non orci fermentum consectetur. Donec gravida, lectus vel vestibulum congue, nunc turpis consectetur dolor, ut sagittis arcu dolor id enim. Nulla facilisi.</p>
+
+            <img src="img/picture_example.jpg" alt="">
+        
+        </div>
+    </main>
+
+    <footer>
+            <p>&copy; 2022 Exercise One. All rights reserved. Developed by : <a href="#" target="_blank" rel="noopener noreferrer">Mg Mg</a></p>
+    </footer>
+</body>
+</html>
