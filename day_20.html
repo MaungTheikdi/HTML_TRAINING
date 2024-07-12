@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section with Sticky Navigation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        nav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: black;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        #navbar.sticky {
+            position: fixed;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            height: fit-content;
+        }
+
+        #navbar.sticky+.hero {
+            padding-top: 3rem;
+            /* adjust this value based on your nav height */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>Creating beautiful websites is our passion.</p>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section content.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section content.</p>
+        </section>
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>This is the services section content.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section content.</p>
+        </section>
+
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section content.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section content.</p>
+        </section>
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>This is the services section content.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section content.</p>
+        </section>
+
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section content.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section content.</p>
+        </section>
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>This is the services section content.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section content.</p>
+        </section>
+
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section content.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section content.</p>
+        </section>
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>This is the services section content.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section content.</p>
+        </section>
+    </main>
+
+    <script>
+        window.onscroll = function() { abcdef() };
+    
+        var abc = document.getElementById("navbar");
+        var def = abc.offsetTop;
+        
+    
+        function abcdef() {
+            if (window.pageYOffset >= def) {
+                abc.classList.add("sticky")
+            } else {
+                abc.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
