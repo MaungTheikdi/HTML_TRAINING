@@ -48,20 +48,17 @@
         //2x9 = 18
         //using the for loop
         for($i=1; $i<10; $i++){
-            echo '2 x '.$i.' = '.$i*2;
-            echo "<br>";
-
+            //echo '2 x '.$i.' = '.$i*2;
+            //echo "<br>";
         }
 
 
-
-        
         // foreach loops
         $numbers = array(1, 2, 3, 4, 5);
+        //$cars = array("BMW", "Toyota", "Isuz")
         foreach($numbers as $number){
             //echo "<h1>The number is: $number </h1><br>";
         }
-
         
 
         // break and continue statements
@@ -79,10 +76,43 @@
             //echo "<h1>The number is: $o </h1><br>";
         }
 
+        function funName(){
+            echo "This is a function.";
+        }
+        //funName();
+        
+
+
         // Functions
         function addNumbers($num1, $num2){
             return $num1 + $num2;
         }
+        // echo even number 2,4,6,8,10,12
+        for($i=1; $i < 7;$i++){
+            //echo $i*2 ."<br>";
+        }
+
+        for($i=1; $i < 20;$i++){
+            if($i%2 != 0){
+                //echo $i."<br>";
+            }
+        }
+
+        //00,11,22,..,99
+        //12,23,34,..,89
+        for($i=0; $i <= 9;$i++){
+            for($j=0; $j <= 9;$j++){
+                if($i%2 != 0 && $j%2 !=0){
+                    //echo $j.$i."<br>";
+                }
+            }
+        }
+        //echo $i;
+
+
+
+
+        //echo addNumbers(1, 2);
         //echo "<h1>The sum is: ". addNumbers(5, 10). "</h1><br>";
 
         // Arrays
@@ -100,8 +130,13 @@
         );
         //echo "<h1>".$person2[0]["name"]."</h1><br>";
 
+        //$parson = array();
+        //$person = new arrow();
+
+
         // Objects
         class Person {
+
             public $name;
             public $age;
             public $city;
@@ -124,6 +159,27 @@
                 return "Name: ".$this->name.", Age: ".$this->age.", City: ".$this->city;
             }
         }
+
+
+
+        class myPerson {
+
+            public $name;
+
+            function __construct($name2){
+                $this->name = $name2;
+            }
+            
+            function introduce(){
+                echo "Hello, my name is ".$this->name."<br>";
+            }
+            
+        }
+
+        $myperson = new myPerson("Kyaw Kyaw");
+        $myperson->introduce();
+
+
         
         // Create an object and call methods
         //$person1 = new Person("John", 30, "New York");
